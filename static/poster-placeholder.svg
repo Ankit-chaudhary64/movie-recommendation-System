@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-label="Poster unavailable">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e51d2a"/>
+      <stop offset="100%" stop-color="#ff3140"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" rx="44" fill="url(#bg)"/>
+  <rect x="52" y="52" width="496" height="796" rx="32" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+  <circle cx="300" cy="305" r="110" fill="url(#accent)" opacity="0.9"/>
+  <path d="M246 250h108a18 18 0 0 1 18 18v74a18 18 0 0 1-18 18H246a18 18 0 0 1-18-18v-74a18 18 0 0 1 18-18Zm28 0v110m44-110v110m44-110v110" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="14"/>
+  <text x="300" y="520" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="5">MOVIE</text>
+  <text x="300" y="565" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="700" text-anchor="middle">Matchmaker</text>
+  <text x="300" y="645" fill="#9da0a9" font-family="Segoe UI, Arial, sans-serif" font-size="24" text-anchor="middle">Poster unavailable</text>
+</svg>

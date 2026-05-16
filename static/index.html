@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Matchmaker</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <span class="brand-mark">MM</span>
+          <span class="brand-name">Movie Matchmaker</span>
+        </div>
+
+        <nav class="topnav" aria-label="Primary">
+          <a href="#selected-movie">Home</a>
+          <a href="#popular-shelf">Popular</a>
+          <a href="#results-shelf">Matches</a>
+          <a href="#search-band">Browse</a>
+        </nav>
+
+        <div id="movie-count" class="catalog-pill">4,806 titles</div>
+      </header>
+
+      <section id="search-band" class="search-band">
+        <form id="search-form" class="search-form">
+          <div class="search-stack">
+            <input
+              id="movie-input"
+              name="movie"
+              type="text"
+              autocomplete="off"
+              placeholder="Search Avatar, Spectre, Interstellar..."
+              spellcheck="false"
+            />
+            <div id="suggestions" class="suggestions hidden" role="listbox" aria-label="Suggestions"></div>
+          </div>
+          <button id="search-button" type="submit">Search</button>
+          <button id="random-button" class="ghost-button" type="button">Random</button>
+        </form>
+
+        <div id="status-banner" class="status-banner hidden" role="status" aria-live="polite"></div>
+      </section>
+
+      <main class="main-layout">
+        <section id="selected-movie" class="spotlight empty-state" aria-live="polite">
+          <div class="empty-copy">
+            <p class="section-label">Movie Matchmaker</p>
+            <h1>Search a movie.</h1>
+            <p>Poster-first recommendations from your model.</p>
+          </div>
+        </section>
+
+        <section id="popular-shelf" class="shelf">
+          <div class="shelf-head">
+            <h2>Popular</h2>
+          </div>
+          <div id="featured-grid" class="poster-row" aria-live="polite"></div>
+        </section>
+
+        <section id="results-shelf" class="shelf">
+          <div class="shelf-head">
+            <h2 id="results-title">Recommended</h2>
+            <p id="results-caption" class="shelf-note">Pick a title to load matches.</p>
+          </div>
+          <div id="results-grid" class="poster-row poster-row-results" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
