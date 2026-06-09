@@ -1,0 +1,80 @@
+# CPU Scheduling Algorithms
+
+→ **CPU ko kaunsa process next milega**
+
+| Algorithm                 | Hint                                |
+| ------------------------- | ----------------------------------- |
+| FCFS                      | Jo pehle aaye pehle execute         |
+| SJF                       | Sabse chhota burst time             |
+| SRTF                      | Sabse kam remaining time            |
+| Priority Scheduling       | Highest priority pehle              |
+| Round Robin               | Time quantum ke according turn-turn |
+| Multilevel Queue          | Different queues fixed priority     |
+| Multilevel Feedback Queue | Process queue change kar sakta      |
+
+---
+
+# Deadlock Handling Algorithms
+
+→ **Resources allocation aur deadlock avoid/detect**
+
+| Algorithm                 | Hint                                       |
+| ------------------------- | ------------------------------------------ |
+| Banker’s Algorithm        | Safe state check karke resource allocation |
+| Deadlock Detection        | Deadlock already hua ya nahi detect        |
+| Resource Allocation Graph | Graph se cycle/deadlock check              |
+
+---
+
+# Memory Management Algorithms
+
+→ **Memory block allocation**
+
+| Algorithm | Hint                         |
+| --------- | ---------------------------- |
+| First Fit | Pehla suitable block         |
+| Best Fit  | Sabse chhota suitable block  |
+| Worst Fit | Sabse bada block             |
+| Next Fit  | Last position ke baad search |
+
+---
+
+# Page Replacement Algorithms (Virtual Memory)
+
+→ **RAM full hone par kaunsa page replace hoga**
+
+| Algorithm     | Hint                     |
+| ------------- | ------------------------ |
+| FIFO          | Sabse purana page        |
+| LRU           | Long time se unused page |
+| Optimal       | Future me late use page  |
+| LFU           | Least used page          |
+| Second Chance | FIFO + second chance     |
+| Clock         | Circular second chance   |
+
+---
+
+# Disk Scheduling Algorithms
+
+→ **Disk head kis request par pehle jayega**
+
+| Algorithm | Hint                         |
+| --------- | ---------------------------- |
+| FCFS Disk | Request order me             |
+| SSTF      | Nearest track                |
+| SCAN      | Elevator movement both sides |
+| C-SCAN    | One direction circular       |
+| LOOK      | Last request tak hi move     |
+| C-LOOK    | Circular + last request tak  |
+
+---
+
+# Super Short Memory Trick
+
+| Category          | Kya manage karta       |
+| ----------------- | ---------------------- |
+| CPU Scheduling    | CPU time/process       |
+| Deadlock          | Resources & safe state |
+| Memory Management | Memory blocks          |
+| Page Replacement  | RAM pages              |
+| Disk Scheduling   | Disk head movement     |
